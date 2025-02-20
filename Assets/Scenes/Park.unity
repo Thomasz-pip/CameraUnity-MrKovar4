@@ -274,9 +274,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 823065981}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 823065980}
   m_SourcePrefab: {fileID: 100100000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
 --- !u!1001 &87955793
 PrefabInstance:
@@ -2266,25 +2263,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
   m_PrefabInstance: {fileID: 9854091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &823065980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823065979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32f834c00d59a48f280d4ca9ecba15a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 823065981}
-  anim: {fileID: 823065983}
-  runningSound: {fileID: 0}
-  runningSpeed: 4
-  rotationSpeed: 800
-  jumpHeight: 6
-  moveDir: {x: 0, y: 0, z: 0}
 --- !u!143 &823065981
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2338,11 +2316,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!95 &823065983 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
-  m_PrefabInstance: {fileID: 9854091}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &823065984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
