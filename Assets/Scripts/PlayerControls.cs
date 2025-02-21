@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     // Assuming you want to handle two players
     public bool playerOne = true; // Set this based on the current player
+    public bool playerTwo = false;
 
     // Start function to get the components
     void Start()

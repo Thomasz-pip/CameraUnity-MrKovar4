@@ -1492,6 +1492,104 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1919368760593702553, guid: c6e854f638107994fb7fcaf03c48c38e, type: 3}
   m_PrefabInstance: {fileID: 414522655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &455516266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455516270}
+  - component: {fileID: 455516269}
+  - component: {fileID: 455516267}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &455516267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455516266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0eb43d8f2a1bf54e8fad7d66fca2ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1688154240}
+  offset: {x: 0, y: 2, z: -2}
+--- !u!20 &455516269
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455516266}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.5
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 65.6
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &455516270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455516266}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.12384342, y: -0, z: -0, w: 0.9923018}
+  m_LocalPosition: {x: 5.89, y: -2.01, z: 16.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 14.228, y: 0, z: 0}
 --- !u!1001 &493835506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2341,6 +2439,12 @@ MonoBehaviour:
   jumpHeight: 6
   moveDir: {x: 0, y: 0, z: 0}
   playerOne: 1
+  playerTwo: 0
+--- !u!4 &823065984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
+  m_PrefabInstance: {fileID: 9854091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &842409459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2679,13 +2783,13 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
-    width: 1
+    width: 0.5
     height: 1
   near clip plane: 0.3
   far clip plane: 100
-  field of view: 42
+  field of view: 64.9
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2730,8 +2834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0eb43d8f2a1bf54e8fad7d66fca2ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
+  target: {fileID: 823065984}
+  offset: {x: 0, y: 2, z: -3}
 --- !u!1001 &954905750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4584,7 +4688,13 @@ MonoBehaviour:
   rotationSpeed: 100
   jumpHeight: 6
   moveDir: {x: 0, y: 0, z: 0}
-  playerOne: 1
+  playerOne: 0
+  playerTwo: 1
+--- !u!4 &1688154240 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 2db7e17401e08b94697ecd7acce75ab1, type: 3}
+  m_PrefabInstance: {fileID: 1688154233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1800207330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6433,3 +6543,4 @@ SceneRoots:
   - {fileID: 604106131}
   - {fileID: 9854091}
   - {fileID: 1688154233}
+  - {fileID: 455516270}
